@@ -1,1 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.contenedor {
+  color: #000000;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  width: 26%;
+  position: relative;
+  margin: 400px;
+}
+.num {
+  font-size: 150px;
+  text-align: center;
+}

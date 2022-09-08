@@ -6,11 +6,19 @@ body {
   color: #000000;
   background-color: #f3f3f3;
   border-radius: 15px;
-  width: 26%;
+  width: 3500px;
   position: relative;
   margin: 400px;
 }
 .num {
   font-size: 150px;
-  text-align: center;
+}
+#symbol {
+  margin-left: 5%;
+}
+#numero {
+  margin-left: 50%;
+}
+#symbol2 {
+  margin-left: 70%;
 }

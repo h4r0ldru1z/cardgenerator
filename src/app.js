@@ -14,3 +14,18 @@ window.onload = function() {
 
   document.querySelector("#numero").append(simbolo[random]);
 };
+let cardsymbol = ["♣", "♠", "♥", "♦"];
+
+  let randomcardsymbol = Math.floor(Math.random() * cardsymbol.length);
+
+  document.querySelector("#symbol").append(cardsymbol[randomcardsymbol]);
+  document.querySelector("#symbol2").append(cardsymbol[randomcardsymbol]);
+
+  if (
+    cardsymbol[randomcardsymbol] === "♥" ||
+    cardsymbol[randomcardsymbol] === "♦"
+  ) {
+    document.querySelector("#symbol").style.color = "red";
+    document.querySelector("#symbol2").style.color = "red";
+  }
+};

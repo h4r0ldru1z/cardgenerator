@@ -16,16 +16,15 @@ window.onload = function() {
 };
 let cardsymbol = ["♣", "♠", "♥", "♦"];
 
-  let randomcardsymbol = Math.floor(Math.random() * cardsymbol.length);
+let randomcardsymbol = Math.floor(Math.random() * cardsymbol.length);
 
-  document.querySelector("#symbol").append(cardsymbol[randomcardsymbol]);
-  document.querySelector("#symbol2").append(cardsymbol[randomcardsymbol]);
+document.querySelector("#symbol").append(cardsymbol[randomcardsymbol]);
+document.querySelector("#symbol2").append(cardsymbol[randomcardsymbol]);
 
-  if (
-    cardsymbol[randomcardsymbol] === "♥" ||
-    cardsymbol[randomcardsymbol] === "♦"
-  ) {
-    document.querySelector("#symbol").style.color = "red";
-    document.querySelector("#symbol2").style.color = "red";
-  }
-};
+if (
+  cardsymbol[randomcardsymbol] === "♥" ||
+  cardsymbol[randomcardsymbol] === "♦"
+) {
+  document.querySelector("#symbol").style.color = "red";
+  document.querySelector("#symbol2").style.color = "red";
+}
